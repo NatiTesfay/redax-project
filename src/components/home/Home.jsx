@@ -11,12 +11,12 @@ const MapDispatchToProps = (dispatch)=>({
 
 const Home = () => {
   const changeUser = ()=>{
-    props.changeUser({user:{fName:"Dalia"}})
+    props.changeUser({users:{fName:"Dalia"}})
   }
   return (
     <>
     <div>Home</div>
-    <p>{props.user.fName}</p>
+    <p>{props.users.fName}</p>
     <button onClick={changeUser}>Change</button>
     </>
   );

@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import { useReducer } from ''
 
 
-const userStore = createStore({useReducer,user:{fName:"avi"}})
+const userStore = createStore({useReducer,users:[]})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={userStore} >
