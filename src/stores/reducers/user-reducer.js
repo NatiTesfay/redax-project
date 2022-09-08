@@ -6,11 +6,18 @@ export const Users = ({...users},action)=>{
         case ADD_USERS:
             return [...users,action.payload] 
         case GET_USERS_BY_ID:
-            return;
+            return [...users] ;
         case UPDATE_USERS:
-            return;
+            let newArray = users.filter((userItem)=>{
+                userItem.id==action.payload
+            })
+            users[users.indexOf(newArray[0])]=action.payload
+            return [...users] ;
         case DELETE_USERS:
-            return;
+            newArray = users.filter((userItem)=>{
+                userItem.id == action.payload
+            })
+            return [...newArray];
         default:
             return {users};
     }
