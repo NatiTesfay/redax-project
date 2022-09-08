@@ -1,4 +1,3 @@
-import {createStore} from 'redux';
 import {ADD_USERS,GET_USERS_BY_ID,UPDATE_USERS,DELETE_USERS} from '../types';
 
 
