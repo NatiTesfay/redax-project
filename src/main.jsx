@@ -4,10 +4,9 @@ import App from './App'
 import './index.css'
 import {createStore} from 'redux'
 import { Provider } from 'react-redux'
-import { useReducer } from ''
+import { usersReducer } from './stores/reducers/user-reducer'
 
-
-const userStore = createStore({useReducer,users:[]})
+const userStore = createStore(usersReducer,{users:[]})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={userStore} >

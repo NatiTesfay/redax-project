@@ -1,10 +1,11 @@
-import {ADD_USERS,GET_USERS_BY_ID,UPDATE_USERS,DELETE_USERS} from '../types';
+import {ADD_USERS,GET_USERS_BY_ID,UPDATE_USERS,DELETE_USERS} from '../../stores/types/users-types';
 
 
-export const Users = ({...users},action)=>{
+export const usersReducer = ({users},action)=>{
+
     switch (action.type) {
         case ADD_USERS:
-            return [...users,action.payload] 
+            return {users:[...users,action.payload]} 
         case GET_USERS_BY_ID:
             return [...users] ;
         case UPDATE_USERS:
