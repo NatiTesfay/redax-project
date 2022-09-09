@@ -3,13 +3,11 @@ import './App.css'
 import Home from './components/home/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
   <>
+  App
   <Home/>
   </>
   )
 }
-
 export default App

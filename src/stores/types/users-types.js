@@ -1,5 +1,12 @@
 
-export const ADD_USERS = "ADD_USERS"
-export const GET_USERS_BY_ID = "GET_USERS_BY_ID";
-export const UPDATE_USERS = "UPDATE_USERS";
-export const DELETE_USERS = "DELETE_USERS";
+ const ADD_USERS = "ADD_USERS"
+ const GET_USERS_BY_ID = "GET_USERS_BY_ID";
+ const UPDATE_USERS = "UPDATE_USERS";
+ const DELETE_USERS = "DELETE_USERS";
+
+ export{
+    ADD_USERS,
+    GET_USERS_BY_ID,
+    UPDATE_USERS,
+    DELETE_USERS
+ }
